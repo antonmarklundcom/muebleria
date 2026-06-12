@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Ropero Familiar 4 Puertas con Espejo">
+  <rect width="800" height="600" fill="#b98a5c"/>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <rect x="270" y="140" width="120" height="240" rx="8" fill="#623c2f" opacity="0.9"/>
+         <rect x="410" y="140" width="120" height="240" rx="8" fill="#623c2f" opacity="0.7"/>
+         <circle cx="380" cy="260" r="7" fill="#b98a5c"/>
+         <circle cx="420" cy="260" r="7" fill="#b98a5c"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#ffffff"><tspan x="400" dy="0">Ropero Familiar 4 Puertas</tspan><tspan x="400" dy="38">con Espejo</tspan></text>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">muebleria.com.py — imagen referencial</text>
+</svg>

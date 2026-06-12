@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "sofa-cama-practico-1-plaza",
+    "name": "Sofá Cama Práctico 1 Plaza",
+    "category": "sofa-camas",
+    "tier": "entrada",
+    "price": 1450000,
+    "material": {
+      "structure": "Bastidor de pino tratado y terciado fenólico",
+      "surfaces": "Tapizado en tela antimanchas gris",
+      "badge": "Pino Tratado"
+    },
+    "dimensions": { "width": 190, "height": 80, "depth": 90 },
+    "weightKg": 42,
+    "assembly": { "required": false, "feeAsuncion": 0 },
+    "delivery": {
+      "asuncion": 120000,
+      "granAsuncion": 170000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/sofa-cama-practico-1-plaza-1.svg",
+      "/images/products/sofa-cama-practico-1-plaza-2.svg"
+    ],
+    "description": "Sofá cama de 1 plaza para monoambientes y piezas de visita. Bastidor de pino tratado con base de terciado fenólico — nada de estructuras de MDP que crujen al mes. Mecanismo de apertura simple: de sofá a cama en 10 segundos. Llega armado, listo para usar.",
+    "featured": false,
+    "stock": "disponible"
+  },
+  {
+    "slug": "sofa-cama-familiar-2-plazas",
+    "name": "Sofá Cama Familiar 2 Plazas",
+    "category": "sofa-camas",
+    "tier": "media",
+    "price": 2600000,
+    "material": {
+      "structure": "Bastidor de pino tratado reforzado, base de terciado fenólico 18mm",
+      "surfaces": "Tapizado en lino antimanchas, almohadones desenfundables",
+      "badge": "Pino Tratado"
+    },
+    "dimensions": { "width": 210, "height": 85, "depth": 95 },
+    "weightKg": 65,
+    "assembly": { "required": false, "feeAsuncion": 0 },
+    "delivery": {
+      "asuncion": 150000,
+      "granAsuncion": 200000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/sofa-cama-familiar-2-plazas-1.svg",
+      "/images/products/sofa-cama-familiar-2-plazas-2.svg"
+    ],
+    "description": "Sofá de uso diario que se convierte en cama de 2 plazas para las visitas. Bastidor de pino tratado reforzado que banca el peso de toda la familia mirando la novela, tapizado en lino antimanchas con fundas lavables. La base de terciado fenólico no se deforma ni en los veranos más húmedos.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "sofa-cama-premium-madera-vista",
+    "name": "Sofá Cama Premium Madera Vista",
+    "category": "sofa-camas",
+    "tier": "premium",
+    "price": 4500000,
+    "material": {
+      "structure": "Estructura vista de madera maciza, base de terciado fenólico",
+      "surfaces": "Madera maciza lustrada + tapizado premium a elección",
+      "badge": "Madera Maciza + Hierro"
+    },
+    "dimensions": { "width": 220, "height": 88, "depth": 100 },
+    "weightKg": 85,
+    "assembly": { "required": false, "feeAsuncion": 0 },
+    "delivery": {
+      "asuncion": 180000,
+      "granAsuncion": 240000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/sofa-cama-premium-madera-vista-1.svg",
+      "/images/products/sofa-cama-premium-madera-vista-2.svg"
+    ],
+    "description": "Pieza de living con estructura vista de madera maciza lustrada y tapizado premium a elección de catálogo. De día, un sofá escultural; de noche, una cama matrimonial real con base firme de terciado fenólico. Fabricado a pedido en nuestro taller con maderas estacionadas — un mueble para toda la vida.",
+    "featured": false,
+    "stock": "a_pedido",
+    "leadTimeDays": 30
+  }
+]

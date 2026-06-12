@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "ropero-compacto-2-puertas",
+    "name": "Ropero Compacto 2 Puertas",
+    "category": "roperos",
+    "tier": "entrada",
+    "price": 1150000,
+    "material": {
+      "structure": "Melamina RH 15mm, fondo de terciado fenólico",
+      "surfaces": "Melamina RH blanco nieve, cantos sellados",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 80, "height": 180, "depth": 50 },
+    "weightKg": 45,
+    "assembly": { "required": true, "feeAsuncion": 100000 },
+    "delivery": {
+      "asuncion": 100000,
+      "granAsuncion": 150000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/ropero-compacto-2-puertas-1.svg",
+      "/images/products/ropero-compacto-2-puertas-2.svg"
+    ],
+    "description": "Ropero de 2 puertas ideal para piezas chicas y departamentos. Barral metálico, dos estantes y zócalo elevado que separa el mueble del piso húmedo. Construido en melamina RH con fondo de terciado fenólico: las puertas siguen cerrando derecho año tras año, aunque la pared transpire en verano.",
+    "featured": false,
+    "stock": "disponible",
+    "tags": ["2 puertas"]
+  },
+  {
+    "slug": "ropero-familiar-4-puertas-espejo",
+    "name": "Ropero Familiar 4 Puertas con Espejo",
+    "category": "roperos",
+    "tier": "media",
+    "price": 2450000,
+    "material": {
+      "structure": "Melamina RH 18mm, fondo de terciado fenólico",
+      "surfaces": "Melamina RH roble + blanco, espejo central de 4mm",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 160, "height": 200, "depth": 55 },
+    "weightKg": 95,
+    "assembly": { "required": true, "feeAsuncion": 150000 },
+    "delivery": {
+      "asuncion": 130000,
+      "granAsuncion": 180000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/ropero-familiar-4-puertas-espejo-1.svg",
+      "/images/products/ropero-familiar-4-puertas-espejo-2.svg"
+    ],
+    "description": "El ropero más vendido: 4 puertas, espejo central de cuerpo entero, 2 cajones, doble barral y estantes regulables. Tableros RH de 18 mm con herrajes reforzados — los cajones corren suave y las bisagras no se descuelgan. Diseñado para el dormitorio de una pareja que necesita espacio real y un mueble que sobreviva mudanzas.",
+    "featured": true,
+    "stock": "disponible",
+    "tags": ["4 puertas", "con espejo"]
+  },
+  {
+    "slug": "ropero-premium-6-puertas-espejo",
+    "name": "Ropero Premium 6 Puertas con Espejo Doble",
+    "category": "roperos",
+    "tier": "premium",
+    "price": 4900000,
+    "material": {
+      "structure": "MDF RH 18mm, fondo de terciado fenólico, frentes ruteados",
+      "surfaces": "MDF RH laqueado satinado, espejos dobles biselados",
+      "badge": "MDF RH"
+    },
+    "dimensions": { "width": 240, "height": 220, "depth": 60 },
+    "weightKg": 160,
+    "assembly": { "required": true, "feeAsuncion": 250000 },
+    "delivery": {
+      "asuncion": 180000,
+      "granAsuncion": 240000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/ropero-premium-6-puertas-espejo-1.svg",
+      "/images/products/ropero-premium-6-puertas-espejo-2.svg"
+    ],
+    "description": "Ropero de 6 puertas a medida de un dormitorio principal: 240 cm de frente, espejos dobles biselados, 4 cajones con corredera telescópica, zapatero interno y doble altura de barrales. Frentes de MDF RH ruteado con laca satinada — terminación de mueble de diseño, resistencia de material técnico. Fabricación a pedido con colores a elección.",
+    "featured": false,
+    "stock": "a_pedido",
+    "leadTimeDays": 20,
+    "tags": ["6 puertas", "con espejo"]
+  }
+]

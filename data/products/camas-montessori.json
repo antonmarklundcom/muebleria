@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "cama-montessori-piso",
+    "name": "Cama Montessori de Piso",
+    "category": "camas-montessori",
+    "tier": "entrada",
+    "price": 890000,
+    "material": {
+      "structure": "Pino macizo tratado 40mm, encastres atornillados",
+      "surfaces": "Lijado fino, sellador al agua apto para niños",
+      "badge": "Pino Tratado"
+    },
+    "dimensions": { "width": 145, "height": 25, "depth": 75 },
+    "weightKg": 25,
+    "assembly": { "required": true, "feeAsuncion": 80000 },
+    "delivery": {
+      "asuncion": 90000,
+      "granAsuncion": 130000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/cama-montessori-piso-1.svg",
+      "/images/products/cama-montessori-piso-2.svg"
+    ],
+    "description": "Cama Montessori a ras de piso para colchón de 140 × 70 cm. Pino macizo tratado con cantos redondeados a mano y sellador al agua apto para uso infantil — sin formaldehído ni aglomerados. Tu hijo sube y baja solo, sin barrotes ni alturas. Soporta el peso de un adulto para las noches de cuentos.",
+    "featured": false,
+    "stock": "disponible"
+  },
+  {
+    "slug": "cama-montessori-casita",
+    "name": "Cama Montessori Casita",
+    "category": "camas-montessori",
+    "tier": "media",
+    "price": 1650000,
+    "material": {
+      "structure": "Pino macizo tratado 40mm, techo a dos aguas",
+      "surfaces": "Lijado fino, sellador al agua apto para niños",
+      "badge": "Pino Tratado"
+    },
+    "dimensions": { "width": 150, "height": 160, "depth": 80 },
+    "weightKg": 35,
+    "assembly": { "required": true, "feeAsuncion": 100000 },
+    "delivery": {
+      "asuncion": 100000,
+      "granAsuncion": 140000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/cama-montessori-casita-1.svg",
+      "/images/products/cama-montessori-casita-2.svg"
+    ],
+    "description": "La clásica camita casita con techo a dos aguas que los chicos aman. Pino macizo tratado que resiste la humedad ambiente — clave cuando el colchón va cerca del piso — con encastres atornillados que se pueden armar y desarmar en cada mudanza. Para colchón de 140 × 70 cm. Decorala con luces y guirnaldas.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "cama-montessori-premium-cajon",
+    "name": "Cama Montessori Premium con Barrera y Cajón",
+    "category": "camas-montessori",
+    "tier": "premium",
+    "price": 3200000,
+    "material": {
+      "structure": "Pino macizo tratado 45mm seleccionado, cajón con ruedas",
+      "surfaces": "Doble lijado, sellador al agua apto para niños, color a elección",
+      "badge": "Pino Tratado"
+    },
+    "dimensions": { "width": 195, "height": 170, "depth": 95 },
+    "weightKg": 55,
+    "assembly": { "required": true, "feeAsuncion": 130000 },
+    "delivery": {
+      "asuncion": 120000,
+      "granAsuncion": 160000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/cama-montessori-premium-cajon-1.svg",
+      "/images/products/cama-montessori-premium-cajon-2.svg"
+    ],
+    "description": "La casita completa: cama Montessori para colchón de 190 × 90 cm con barrera anticaídas desmontable y cajón gigante con ruedas para juguetes o cama nido. Pino macizo seleccionado de 45 mm, doble lijado y color a elección (natural, blanco, gris). Crece con tu hijo: la barrera se quita cuando ya no la necesita.",
+    "featured": false,
+    "stock": "a_pedido",
+    "leadTimeDays": 20
+  }
+]
