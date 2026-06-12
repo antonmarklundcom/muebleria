@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "vanitory-compacto-50",
+    "name": "Vanitory Compacto 50 cm",
+    "category": "muebles-de-bano",
+    "tier": "entrada",
+    "price": 750000,
+    "material": {
+      "structure": "MDF RH 18mm, fondo ventilado",
+      "surfaces": "MDF RH laqueado blanco, herrajes inoxidables",
+      "badge": "MDF RH"
+    },
+    "dimensions": { "width": 50, "height": 60, "depth": 38 },
+    "weightKg": 18,
+    "assembly": { "required": true, "feeAsuncion": 80000 },
+    "delivery": {
+      "asuncion": 70000,
+      "granAsuncion": 100000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/vanitory-compacto-50-1.svg",
+      "/images/products/vanitory-compacto-50-2.svg"
+    ],
+    "description": "Vanitory de 50 cm para toilettes y baños chicos. Construido íntegramente en MDF RH — el material hecho para vivir en el vapor de la ducha — con laca blanca, fondo ventilado y herrajes inoxidables. Donde un mueble de MDP común dura meses, este dura años. Incluye puerta con estante interno.",
+    "featured": false,
+    "stock": "disponible"
+  },
+  {
+    "slug": "vanitory-espejo-botiquin-70",
+    "name": "Vanitory 70 cm + Espejo con Botiquín",
+    "category": "muebles-de-bano",
+    "tier": "media",
+    "price": 1480000,
+    "material": {
+      "structure": "Terciado fenólico 18mm, cantos sellados",
+      "surfaces": "Melamina RH textura madera + laca, espejo de 4mm",
+      "badge": "Terciado Fenólico"
+    },
+    "dimensions": { "width": 70, "height": 60, "depth": 40 },
+    "weightKg": 30,
+    "assembly": { "required": true, "feeAsuncion": 100000 },
+    "delivery": {
+      "asuncion": 80000,
+      "granAsuncion": 110000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/vanitory-espejo-botiquin-70-1.svg",
+      "/images/products/vanitory-espejo-botiquin-70-2.svg"
+    ],
+    "description": "Juego completo de baño: vanitory de 70 cm con dos puertas y cajón, más espejo con botiquín a juego. Cuerpo de terciado fenólico — la prueba máxima de resistencia a la humedad — con frentes en textura madera. El conjunto que transforma el baño de la familia, hecho para el vapor diario.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "vanitory-suspendido-premium-90",
+    "name": "Vanitory Suspendido Premium 90 cm con Bacha",
+    "category": "muebles-de-bano",
+    "tier": "premium",
+    "price": 2950000,
+    "material": {
+      "structure": "Terciado fenólico 18mm con herrajes de suspensión reforzados",
+      "surfaces": "Laca poliuretánica satinada, bacha de losa incluida",
+      "badge": "Terciado Fenólico"
+    },
+    "dimensions": { "width": 90, "height": 50, "depth": 45 },
+    "weightKg": 38,
+    "assembly": { "required": true, "feeAsuncion": 150000 },
+    "delivery": {
+      "asuncion": 90000,
+      "granAsuncion": 120000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/vanitory-suspendido-premium-90-1.svg",
+      "/images/products/vanitory-suspendido-premium-90-2.svg"
+    ],
+    "description": "Vanitory suspendido de 90 cm con bacha de losa incluida y cajones con cierre suave. Flota sobre el piso — el baño se limpia en segundos y el mueble nunca toca el agua. Terciado fenólico con laca poliuretánica: la combinación más resistente que existe para un baño paraguayo. Instalación profesional disponible en Asunción.",
+    "featured": false,
+    "stock": "a_pedido",
+    "leadTimeDays": 15
+  }
+]

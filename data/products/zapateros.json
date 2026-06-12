@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "zapatero-compacto-3-niveles",
+    "name": "Zapatero Compacto 3 Niveles",
+    "category": "zapateros",
+    "tier": "entrada",
+    "price": 280000,
+    "material": {
+      "structure": "Melamina RH 15mm",
+      "surfaces": "Melamina RH blanco, cantos sellados",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 60, "height": 60, "depth": 30 },
+    "weightKg": 12,
+    "assembly": { "required": true, "feeAsuncion": 50000 },
+    "delivery": {
+      "asuncion": 60000,
+      "granAsuncion": 90000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/zapatero-compacto-3-niveles-1.svg",
+      "/images/products/zapatero-compacto-3-niveles-2.svg"
+    ],
+    "description": "El primer paso para ordenar la entrada: zapatero compacto de 3 niveles para hasta 9 pares. Melamina RH con zócalo elevado — aguanta el piso baldeado y las championes mojadas de la lluvia sin hincharse. Armado en 15 minutos con manual en español. El producto ideal para conocer nuestra calidad.",
+    "featured": false,
+    "stock": "disponible"
+  },
+  {
+    "slug": "zapatero-puertas-batientes",
+    "name": "Zapatero con Puertas Batientes",
+    "category": "zapateros",
+    "tier": "media",
+    "price": 520000,
+    "material": {
+      "structure": "Melamina RH 15mm, fondo de terciado fenólico",
+      "surfaces": "Melamina RH roble + blanco",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 80, "height": 110, "depth": 25 },
+    "weightKg": 24,
+    "assembly": { "required": true, "feeAsuncion": 60000 },
+    "delivery": {
+      "asuncion": 70000,
+      "granAsuncion": 100000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/zapatero-puertas-batientes-1.svg",
+      "/images/products/zapatero-puertas-batientes-2.svg"
+    ],
+    "description": "Zapatero vertical de perfil finito (25 cm de fondo) con 3 puertas batientes para hasta 18 pares. Los zapatos quedan inclinados y ventilados, ocultos detrás de un frente prolijo bicolor. Fondo de terciado fenólico y bisagras metálicas regulables. Perfecto para pasillos y entradas angostas.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "botinero-banco-premium",
+    "name": "Botinero Banco Premium con Asiento",
+    "category": "zapateros",
+    "tier": "premium",
+    "price": 980000,
+    "material": {
+      "structure": "MDF RH 18mm, asiento de pino tratado",
+      "surfaces": "MDF RH laqueado, asiento de madera lustrada con almohadón",
+      "badge": "MDF RH"
+    },
+    "dimensions": { "width": 100, "height": 50, "depth": 38 },
+    "weightKg": 28,
+    "assembly": { "required": true, "feeAsuncion": 60000 },
+    "delivery": {
+      "asuncion": 80000,
+      "granAsuncion": 110000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/botinero-banco-premium-1.svg",
+      "/images/products/botinero-banco-premium-2.svg"
+    ],
+    "description": "Botinero con asiento: te calzás sentado y guardás hasta 12 pares abajo. Cuerpo de MDF RH laqueado, asiento de pino tratado lustrado con almohadón desmontable. Una pieza de recibidor que combina mueble y comodidad — y que no se hincha aunque viva al lado de la puerta de calle.",
+    "featured": false,
+    "stock": "disponible"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "comedor-asuncion-4-sillas",
+    "name": "Comedor Asunción — Mesa + 4 Sillas",
+    "category": "comedores",
+    "tier": "entrada",
+    "price": 1850000,
+    "material": {
+      "structure": "Tablero melamina RH 18mm, patas de pino tratado",
+      "surfaces": "Melamina RH (resistente a humedad) color roble claro",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 120, "height": 78, "depth": 80 },
+    "weightKg": 38,
+    "assembly": { "required": true, "feeAsuncion": 120000 },
+    "delivery": {
+      "asuncion": 120000,
+      "granAsuncion": 170000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/comedor-asuncion-4-sillas-1.svg",
+      "/images/products/comedor-asuncion-4-sillas-2.svg"
+    ],
+    "description": "El comedor ideal para tu primer departamento o una cocina comedor compacta. Mesa de 120 cm con tapa de melamina RH que no se hincha con el vaso volcado ni el plato caliente, más 4 sillas con asiento firme. Cantos sellados de fábrica y patas de pino tratado que aguantan el piso recién baldeado. Aguanta la humedad del día a día paraguayo, a diferencia del MDP común de las cadenas.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "comedor-familiar-ypacarai-6-sillas",
+    "name": "Comedor Familiar Ypacaraí — Mesa + 6 Sillas",
+    "category": "comedores",
+    "tier": "media",
+    "price": 3200000,
+    "material": {
+      "structure": "Terciado fenólico 18mm, refuerzos de madera maciza",
+      "surfaces": "Melamina RH textura madera nogal, cantos ABS sellados",
+      "badge": "Terciado Fenólico"
+    },
+    "dimensions": { "width": 160, "height": 78, "depth": 90 },
+    "weightKg": 62,
+    "assembly": { "required": true, "feeAsuncion": 150000 },
+    "delivery": {
+      "asuncion": 150000,
+      "granAsuncion": 200000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/comedor-familiar-ypacarai-6-sillas-1.svg",
+      "/images/products/comedor-familiar-ypacarai-6-sillas-2.svg"
+    ],
+    "description": "Mesa familiar de 160 cm construida sobre terciado fenólico — el tablero que se usa en obra por su resistencia a la humedad — con terminación nogal y 6 sillas reforzadas. Pensado para el uso pesado de una familia paraguaya: almuerzos diarios, tareas, tereré y visitas del domingo. Las patas van atornilladas con insertos metálicos: lo podés mudar las veces que quieras sin que se afloje.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "comedor-industrial-guarania-8-sillas",
+    "name": "Comedor Industrial Guarania — Madera Maciza + Hierro, 8 Sillas",
+    "category": "comedores",
+    "tier": "premium",
+    "price": 6500000,
+    "material": {
+      "structure": "Tapa de madera maciza 40mm, estructura de hierro macizo pintado al horno",
+      "surfaces": "Madera maciza lustrada con sellador poliuretánico",
+      "badge": "Madera Maciza + Hierro"
+    },
+    "dimensions": { "width": 220, "height": 78, "depth": 100 },
+    "weightKg": 110,
+    "assembly": { "required": true, "feeAsuncion": 200000 },
+    "delivery": {
+      "asuncion": 200000,
+      "granAsuncion": 260000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/comedor-industrial-guarania-8-sillas-1.svg",
+      "/images/products/comedor-industrial-guarania-8-sillas-2.svg"
+    ],
+    "description": "Nuestra pieza insignia: mesa de 220 cm con tapa de madera maciza de 40 mm y estructura de hierro macizo pintado al horno, estilo industrial. Sellada con poliuretano que resiste calor, humedad y el uso de décadas. Incluye 8 sillas a juego con asiento de madera. Un comedor que pasa de generación en generación — el polo opuesto del mueble descartable de cadena. Fabricación a pedido en nuestro taller.",
+    "featured": true,
+    "stock": "a_pedido",
+    "leadTimeDays": 25
+  }
+]

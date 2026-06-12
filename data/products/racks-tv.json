@@ -1,0 +1,84 @@
+[
+  {
+    "slug": "rack-tv-compacto-50",
+    "name": "Rack TV Compacto hasta 50\"",
+    "category": "racks-tv",
+    "tier": "entrada",
+    "price": 480000,
+    "material": {
+      "structure": "Melamina RH 15mm, fondo con pasacables",
+      "surfaces": "Melamina RH roble claro",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 120, "height": 45, "depth": 35 },
+    "weightKg": 20,
+    "assembly": { "required": true, "feeAsuncion": 60000 },
+    "delivery": {
+      "asuncion": 70000,
+      "granAsuncion": 100000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/rack-tv-compacto-50-1.svg",
+      "/images/products/rack-tv-compacto-50-2.svg"
+    ],
+    "description": "Rack de 120 cm para TV de hasta 50 pulgadas, con dos estantes para deco y consola y pasacables de fábrica. Melamina RH de verdad — no el MDP fino que se dobla con el peso del decodificador. Ideal para apartamentos y primeras casas. Armado simple en 30 minutos.",
+    "featured": false,
+    "stock": "disponible"
+  },
+  {
+    "slug": "rack-tv-puertas-cajones-65",
+    "name": "Rack TV con Puertas y Cajones hasta 65\"",
+    "category": "racks-tv",
+    "tier": "media",
+    "price": 1100000,
+    "material": {
+      "structure": "Melamina RH 18mm, fondo de terciado fenólico con pasacables",
+      "surfaces": "Melamina RH nogal + negro mate",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 160, "height": 50, "depth": 40 },
+    "weightKg": 38,
+    "assembly": { "required": true, "feeAsuncion": 80000 },
+    "delivery": {
+      "asuncion": 90000,
+      "granAsuncion": 120000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/rack-tv-puertas-cajones-65-1.svg",
+      "/images/products/rack-tv-puertas-cajones-65-2.svg"
+    ],
+    "description": "Rack de 160 cm para TV de hasta 65 pulgadas con dos puertas y dos cajones para esconder el lío de cables, joysticks y controles. Tableros RH de 18 mm, fondo de terciado fenólico y correderas metálicas. Terminación bicolor nogal y negro mate que combina con cualquier living.",
+    "featured": true,
+    "stock": "disponible"
+  },
+  {
+    "slug": "rack-vajillero-industrial-75",
+    "name": "Rack Vajillero Industrial hasta 75\" — Madera y Hierro",
+    "category": "racks-tv",
+    "tier": "premium",
+    "price": 2400000,
+    "material": {
+      "structure": "Madera maciza y terciado fenólico, estructura de hierro pintado al horno",
+      "surfaces": "Madera lustrada con sellador poliuretánico",
+      "badge": "Madera Maciza + Hierro"
+    },
+    "dimensions": { "width": 200, "height": 60, "depth": 45 },
+    "weightKg": 70,
+    "assembly": { "required": false, "feeAsuncion": 0 },
+    "delivery": {
+      "asuncion": 130000,
+      "granAsuncion": 170000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/rack-vajillero-industrial-75-1.svg",
+      "/images/products/rack-vajillero-industrial-75-2.svg"
+    ],
+    "description": "Rack vajillero de 200 cm estilo industrial: madera maciza lustrada sobre estructura de hierro macizo pintado al horno. Banca una TV de 75 pulgadas con soundbar, consolas y toda la vajilla de la abuela. Llega armado de fábrica. La pieza que organiza y define el living entero.",
+    "featured": true,
+    "stock": "a_pedido",
+    "leadTimeDays": 20
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "escritorio-estudiante-home-office",
+    "name": "Escritorio Estudiante Home Office",
+    "category": "escritorios",
+    "tier": "entrada",
+    "price": 650000,
+    "material": {
+      "structure": "Melamina RH 18mm",
+      "surfaces": "Melamina RH roble claro, cantos sellados",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 110, "height": 75, "depth": 55 },
+    "weightKg": 22,
+    "assembly": { "required": true, "feeAsuncion": 80000 },
+    "delivery": {
+      "asuncion": 80000,
+      "granAsuncion": 120000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/escritorio-estudiante-home-office-1.svg",
+      "/images/products/escritorio-estudiante-home-office-2.svg"
+    ],
+    "description": "Escritorio compacto de 110 cm con cajón y estante lateral, perfecto para estudiar o trabajar desde casa. Tapa de melamina RH de 18 mm que no se dobla con el peso del monitor ni se mancha con el vaso transpirado del tereré. Armado simple con manual en español.",
+    "featured": false,
+    "stock": "disponible",
+    "tags": ["home office"]
+  },
+  {
+    "slug": "escritorio-gamer-comando",
+    "name": "Escritorio Gamer Comando — Doble Monitor",
+    "category": "escritorios",
+    "tier": "media",
+    "price": 1250000,
+    "material": {
+      "structure": "Melamina RH 18mm, estructura metálica reforzada",
+      "surfaces": "Melamina RH negro mate, pasacables de fábrica",
+      "badge": "Melamina RH"
+    },
+    "dimensions": { "width": 150, "height": 75, "depth": 70 },
+    "weightKg": 35,
+    "assembly": { "required": true, "feeAsuncion": 100000 },
+    "delivery": {
+      "asuncion": 100000,
+      "granAsuncion": 140000,
+      "interiorNote": "Envío al interior por encomienda: coordinamos por WhatsApp, costo a cargo del cliente."
+    },
+    "images": [
+      "/images/products/escritorio-gamer-comando-1.svg",
+      "/images/products/escritorio-gamer-comando-2.svg"
+    ],
+    "description": "Escritorio gamer de 150 × 70 cm con espacio real para doble monitor, soporte de auriculares, portavasos metálico y pasacables de fábrica. Estructura metálica reforzada que no vibra en plena partida. Tapa RH negro mate de 18 mm fácil de limpiar. El setup serio empieza por una base seria.",
+    "featured": true,
+    "stock": "disponible",
+    "tags": ["gamer"]
+  },
+  {
+    "slug": "escritorio-industrial-roble-hierro",
+    "name": "Escritorio Industrial Roble y Hierro",
+    "category": "escritorios",
+    "tier": "premium",
+    "price": 2800000,
+    "material": {
+      "structure": "Tapa de madera maciza 30mm, patas de hierro macizo pintado al horno",
+      "surfaces": "Madera maciza con sellador poliuretánico satinado",
+      "badge": "Madera Maciza + Hierro"
+    },
+    "dimensions": { "width": 160, "height": 76, "depth": 70 },
+    "weightKg": 48,
+    "assembly": { "required": false, "feeAsuncion": 0 },
+    "delivery": {
+      "asuncion": 120000,
+      "granAsuncion": 160000,
+      "interiorNote": "Envío al interior: cotizamos flete especial por WhatsApp según ciudad."
+    },
+    "images": [
+      "/images/products/escritorio-industrial-roble-hierro-1.svg",
+      "/images/products/escritorio-industrial-roble-hierro-2.svg"
+    ],
+    "description": "Escritorio de presencia: tapa de madera maciza de 30 mm sellada con poliuretano y patas de hierro macizo pintado al horno. Llega armado de fábrica — solo lo apoyás y trabajás. La madera maciza envejece mejorando, resiste la humedad ambiente y soporta décadas de uso. Para el home office definitivo o la oficina del jefe.",
+    "featured": false,
+    "stock": "a_pedido",
+    "leadTimeDays": 15,
+    "tags": ["industrial", "home office"]
+  }
+]
