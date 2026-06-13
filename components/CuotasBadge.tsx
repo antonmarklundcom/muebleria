@@ -18,8 +18,8 @@ export default function CuotasBadge({
   const monto = cuotaMensual(price, cuotas);
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-md bg-emerald-100 font-semibold text-emerald-800 ${
-        size === 'sm' ? 'px-1.5 py-0.5 text-[11px]' : 'px-2 py-1 text-sm'
+      className={`inline-flex items-center gap-1 rounded-full border border-line font-medium text-muted ${
+        size === 'sm' ? 'px-2 py-0.5 text-[11px]' : 'px-2.5 py-1 text-sm'
       }`}
     >
       Hasta {cuotas} cuotas sin interés de {formatPYG(monto)} con tarjetas

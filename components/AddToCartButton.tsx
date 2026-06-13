@@ -26,7 +26,7 @@ export default function AddToCartButton({ slug }: { slug: string }) {
         <button
           type="button"
           onClick={() => router.push('/checkout')}
-          className="inline-flex items-center justify-center rounded-lg border-2 border-wood-700 px-5 py-3 font-semibold text-wood-800 transition hover:bg-wood-100"
+          className="inline-flex items-center justify-center rounded-lg border border-clay-400 px-5 py-3 font-medium text-clay-600 transition hover:bg-clay-50"
         >
           Ir al checkout
         </button>

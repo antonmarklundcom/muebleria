@@ -5,7 +5,7 @@ import { WhatsAppIcon } from './icons';
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-wood-200 bg-iron-900 text-stone-300">
+    <footer className="mt-16 border-t border-line bg-charcoal text-stone-300">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-3">
         <div>
           <p className="text-lg font-bold text-white">Mueblería.com.py</p>

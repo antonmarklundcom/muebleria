@@ -252,7 +252,7 @@ export default function CheckoutClient() {
   if (cart.hydrated && items.length === 0) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-wood-900">Tu carrito está vacío</h1>
+        <h1 className="font-serif text-3xl font-normal text-ink">Tu carrito está vacío</h1>
         <p className="mt-3 text-stone-600">
           Explorá nuestras categorías y encontrá el mueble que aguanta de verdad.
         </p>
@@ -265,20 +265,20 @@ export default function CheckoutClient() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="text-2xl font-extrabold text-wood-900 sm:text-3xl">Finalizá tu pedido</h1>
+      <h1 className="font-serif text-3xl font-normal text-ink sm:text-4xl">Finalizá tu pedido</h1>
 
       {/* 1. Cart summary */}
       <section aria-labelledby="resumen" className="mt-6">
-        <h2 id="resumen" className="text-lg font-bold text-stone-900">1. Tu pedido</h2>
-        <ul className="mt-3 divide-y divide-stone-100 rounded-2xl border border-wood-200 bg-white">
+        <h2 id="resumen" className="text-lg font-medium text-ink">1. Tu pedido</h2>
+        <ul className="mt-3 divide-y divide-line rounded-lg border border-line bg-white">
           {items.map(({ product, qty }) => (
             <li key={product.slug} className="flex items-center gap-3 p-3">
-              <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg bg-wood-100">
+              <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg bg-neutral-100">
                 <Image src={product.images[0]} alt={product.name} fill sizes="80px" className="object-cover" />
               </div>
               <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-semibold text-stone-900">{product.name}</p>
-                <p className="text-sm font-bold text-wood-800">{formatPYG(product.price * qty)}</p>
+                <p className="truncate text-sm font-medium text-ink">{product.name}</p>
+                <p className="text-sm font-normal text-ink">{formatPYG(product.price * qty)}</p>
               </div>
               <div className="flex items-center gap-1">
                 <button
@@ -314,8 +314,8 @@ export default function CheckoutClient() {
 
       {/* 2. Customer form */}
       <section aria-labelledby="datos" className="mt-8">
-        <h2 id="datos" className="text-lg font-bold text-stone-900">2. Tus datos</h2>
-        <div className="mt-3 grid gap-4 rounded-2xl border border-wood-200 bg-white p-4 sm:grid-cols-2">
+        <h2 id="datos" className="text-lg font-medium text-ink">2. Tus datos</h2>
+        <div className="mt-3 grid gap-4 rounded-lg border border-line bg-white p-4 sm:grid-cols-2">
           <div>
             <label htmlFor="nombre" className="label">Nombre y apellido *</label>
             <input id="nombre" className="input" autoComplete="name" value={form.nombre}
@@ -356,7 +356,7 @@ export default function CheckoutClient() {
 
       {/* 3. Delivery zone */}
       <section aria-labelledby="entrega" className="mt-8">
-        <h2 id="entrega" className="text-lg font-bold text-stone-900">3. Zona de entrega</h2>
+        <h2 id="entrega" className="text-lg font-medium text-ink">3. Zona de entrega</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-3">
           {DELIVERY_ZONES.map((z) => (
             <button
@@ -364,25 +364,25 @@ export default function CheckoutClient() {
               type="button"
               onClick={() => setZone(z.id)}
               aria-pressed={zone === z.id}
-              className={`rounded-2xl border-2 p-4 text-left transition ${
-                zone === z.id ? 'border-wood-600 bg-wood-100/70' : 'border-stone-200 bg-white hover:border-wood-300'
+              className={`rounded-lg border p-4 text-left transition ${
+                zone === z.id ? 'border-clay-400 bg-clay-50' : 'border-line bg-white hover:border-clay-300'
               }`}
             >
-              <p className="font-bold text-stone-900">{z.label}</p>
+              <p className="font-medium text-ink">{z.label}</p>
               <p className="mt-1 text-xs leading-relaxed text-stone-600">{z.note}</p>
             </button>
           ))}
         </div>
         {hasAssemblyItems && (
-          <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-2xl border border-wood-200 bg-white p-4">
+          <label className="mt-4 flex cursor-pointer items-start gap-3 rounded-lg border border-line bg-white p-4">
             <input
               type="checkbox"
               checked={assembly}
               onChange={(e) => setAssembly(e.target.checked)}
-              className="mt-1 h-4 w-4 accent-wood-700"
+              className="mt-1 h-4 w-4 accent-clay-600"
             />
             <span className="text-sm">
-              <span className="font-semibold text-stone-900">
+              <span className="font-medium text-ink">
                 Quiero el servicio de armado ({formatPYG(assemblyFee)})
               </span>
               <span className="mt-0.5 block text-stone-600">
@@ -394,7 +394,7 @@ export default function CheckoutClient() {
       </section>
 
       {/* Totals */}
-      <section className="mt-8 rounded-2xl border border-wood-200 bg-white p-4">
+      <section className="mt-8 rounded-lg border border-line bg-white p-4">
         <dl className="space-y-1.5 text-sm">
           <div className="flex justify-between">
             <dt className="text-stone-600">Subtotal</dt>
@@ -412,16 +412,16 @@ export default function CheckoutClient() {
               <dd className="font-semibold">{formatPYG(totals.assembly)}</dd>
             </div>
           )}
-          <div className="flex justify-between border-t border-stone-200 pt-2 text-base">
-            <dt className="font-bold text-stone-900">Total</dt>
-            <dd className="font-extrabold text-wood-800">{formatPYG(totals.total)}</dd>
+          <div className="flex justify-between border-t border-line pt-2 text-base">
+            <dt className="font-medium text-ink">Total</dt>
+            <dd className="font-semibold text-ink">{formatPYG(totals.total)}</dd>
           </div>
         </dl>
       </section>
 
       {/* 4. Payment methods */}
       <section aria-labelledby="pago" className="mt-8">
-        <h2 id="pago" className="text-lg font-bold text-stone-900">4. ¿Cómo querés pagar?</h2>
+        <h2 id="pago" className="text-lg font-medium text-ink">4. ¿Cómo querés pagar?</h2>
         {submitError && (
           <p role="alert" className="mt-3 rounded-xl bg-red-50 p-3 text-sm font-medium text-red-700">
             {submitError}
@@ -430,12 +430,12 @@ export default function CheckoutClient() {
         <div className="mt-3 space-y-3">
           {/* Option A: Pagopar */}
           <div
-            className={`rounded-2xl border-2 transition ${
-              method === 'pagopar' ? 'border-wood-600 bg-white' : 'border-stone-200 bg-white'
+            className={`rounded-lg border transition ${
+              method === 'pagopar' ? 'border-clay-400 bg-white' : 'border-line bg-white'
             }`}
           >
             <button type="button" onClick={() => setMethod('pagopar')} className="w-full p-4 text-left">
-              <p className="font-bold text-stone-900">💳 Pagar online (tarjetas, QR, billeteras)</p>
+              <p className="font-medium text-ink">💳 Pagar online (tarjetas, QR, billeteras)</p>
               <p className="mt-1 text-sm text-stone-600">
                 Pago seguro vía Pagopar: tarjetas de crédito y débito, QR, Tigo Money, Billetera
                 Personal y más.
@@ -455,12 +455,12 @@ export default function CheckoutClient() {
 
           {/* Option B: Transferencia */}
           <div
-            className={`rounded-2xl border-2 transition ${
-              method === 'transferencia' ? 'border-wood-600 bg-white' : 'border-stone-200 bg-white'
+            className={`rounded-lg border transition ${
+              method === 'transferencia' ? 'border-clay-400 bg-white' : 'border-line bg-white'
             }`}
           >
             <button type="button" onClick={() => setMethod('transferencia')} className="w-full p-4 text-left">
-              <p className="font-bold text-stone-900">🏦 Transferencia bancaria (SIPAP)</p>
+              <p className="font-medium text-ink">🏦 Transferencia bancaria (SIPAP)</p>
               <p className="mt-1 text-sm text-stone-600">
                 Transferí desde tu banco y subí el comprobante (o envialo por WhatsApp).
               </p>
@@ -493,7 +493,7 @@ export default function CheckoutClient() {
                     type="file"
                     accept="image/jpeg,image/png,image/webp,image/heic,application/pdf"
                     onChange={onFileChange}
-                    className="block w-full text-sm text-stone-600 file:mr-3 file:rounded-lg file:border-0 file:bg-wood-100 file:px-3 file:py-2 file:text-sm file:font-semibold file:text-wood-800"
+                    className="block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-100 file:px-3 file:py-2 file:text-sm file:font-medium file:text-ink"
                   />
                   {fileError && <p className="mt-1 text-xs text-red-600">{fileError}</p>}
                   <p className="mt-1 text-xs text-stone-500">

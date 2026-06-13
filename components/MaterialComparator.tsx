@@ -59,7 +59,7 @@ function Dots({ value, max = 5 }: { value: Rating; max?: number }) {
       {Array.from({ length: max }, (_, i) => (
         <span
           key={i}
-          className={`h-2 w-2 rounded-full ${i < value ? 'bg-emerald-500' : 'bg-stone-300'}`}
+          className={`h-1.5 w-1.5 rounded-full ${i < value ? 'bg-clay-400' : 'bg-neutral-200'}`}
         />
       ))}
     </span>
@@ -68,42 +68,41 @@ function Dots({ value, max = 5 }: { value: Rating; max?: number }) {
 
 export default function MaterialComparator() {
   return (
-    <section aria-labelledby="comparador-titulo" className="rounded-2xl border border-wood-200 bg-white p-4 sm:p-6">
-      <h2 id="comparador-titulo" className="text-lg font-bold text-wood-900 sm:text-xl">
+    <section aria-labelledby="comparador-titulo" className="rounded-lg border border-line bg-white p-6 sm:p-8">
+      <h2 id="comparador-titulo" className="font-serif text-xl font-normal text-ink sm:text-2xl">
         ¿Por qué nuestros muebles aguantan y los de cadena no?
       </h2>
-      <p className="mt-1 text-sm text-stone-600">
+      <p className="mt-2 text-sm text-stone-500">
         Compará los materiales: la diferencia está adentro del mueble.
       </p>
-      <div className="mt-4 overflow-x-auto">
+      <div className="mt-6 overflow-x-auto">
         <table className="w-full min-w-[560px] text-left text-sm">
           <thead>
-            <tr className="border-b border-stone-200 text-xs uppercase tracking-wide text-stone-500">
-              <th className="py-2 pr-3">Material</th>
-              <th className="py-2 pr-3">Resistencia a humedad</th>
-              <th className="py-2 pr-3">Peso</th>
-              <th className="py-2 pr-3">Durabilidad</th>
-              <th className="py-2 pr-3">Precio</th>
+            <tr className="border-b border-line text-xs uppercase tracking-wide text-stone-400">
+              <th className="py-3 pr-3 font-medium">Material</th>
+              <th className="py-3 pr-3 font-medium">Resistencia a humedad</th>
+              <th className="py-3 pr-3 font-medium">Peso</th>
+              <th className="py-3 pr-3 font-medium">Durabilidad</th>
+              <th className="py-3 pr-3 font-medium">Precio</th>
             </tr>
           </thead>
           <tbody>
             {MATERIALS.map((m) => (
-              <tr
-                key={m.name}
-                className={`border-b border-stone-100 ${m.highlight ? '' : 'bg-red-50/60'}`}
-              >
-                <td className="py-3 pr-3">
-                  <span className="font-semibold text-stone-900">{m.name}</span>
+              <tr key={m.name} className="border-b border-line last:border-0">
+                <td className="py-4 pr-3">
+                  <span className={`font-medium ${m.highlight ? 'text-ink' : 'text-stone-400'}`}>
+                    {m.name}
+                  </span>
                   <span className="mt-0.5 block text-xs text-stone-500">{m.note}</span>
                 </td>
-                <td className="py-3 pr-3">
+                <td className="py-4 pr-3">
                   <Dots value={m.humidity} />
                 </td>
-                <td className="py-3 pr-3 text-stone-700">{m.weight}</td>
-                <td className="py-3 pr-3">
+                <td className="py-4 pr-3 text-muted">{m.weight}</td>
+                <td className="py-4 pr-3">
                   <Dots value={m.durability} />
                 </td>
-                <td className="py-3 pr-3 font-medium text-stone-700">{m.price}</td>
+                <td className="py-4 pr-3 text-muted">{m.price}</td>
               </tr>
             ))}
           </tbody>

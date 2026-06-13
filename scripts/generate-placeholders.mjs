@@ -9,15 +9,18 @@ const dataDir = join(root, 'data', 'products');
 const outDir = join(root, 'public', 'images', 'products');
 mkdirSync(outDir, { recursive: true });
 
+// Light neutral placeholders for a minimalist, editorial look.
+// Each entry is [background, silhouette] — all very light neutrals with a
+// soft tonal silhouette; no brown, no heavy color blocks.
 const palette = {
-  comedores: ['#a97347', '#764833'],
-  roperos: ['#b98a5c', '#623c2f'],
-  escritorios: ['#26221f', '#a97347'],
-  'sofa-camas': ['#925d3c', '#e0ccb0'],
-  zapateros: ['#ccab82', '#523329'],
-  'muebles-de-bano': ['#5b7c8d', '#2f4858'],
-  'camas-montessori': ['#d9b98c', '#8a6240'],
-  'racks-tv': ['#1a1714', '#b98a5c'],
+  comedores: ['#EDEAE5', '#C7A684'],
+  roperos: ['#ECEAE6', '#D7D1C7'],
+  escritorios: ['#EAE8E4', '#C0B9AD'],
+  'sofa-camas': ['#EEEBE6', '#DCC4AC'],
+  zapateros: ['#EDEBE7', '#CEC7BB'],
+  'muebles-de-bano': ['#EAEBEA', '#C3C9C5'],
+  'camas-montessori': ['#EFEBE6', '#D6C3AC'],
+  'racks-tv': ['#EAE9E6', '#C3BCB1'],
 };
 
 function escapeXml(s) {
@@ -62,13 +65,13 @@ function svg(product, variant, [bg, accent]) {
   <rect width="800" height="600" fill="url(#g)"/>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   ${shape}
-  <text x="400" y="${textY}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">${tspans}</text>
-  <text x="400" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff" opacity="0.75">muebleria.com.py — imagen referencial</text>
+  <text x="400" y="${textY}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#1A1A1A">${tspans}</text>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="1" fill="#555555">muebleria.com.py — imagen referencial</text>
 </svg>
 `;
 }
@@ -87,17 +90,12 @@ for (const file of readdirSync(dataDir).filter((f) => f.endsWith('.json'))) {
 
 // Default OG/share image
 const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#523329"/>
-  <rect x="0" y="0" width="1200" height="630" fill="url(#g)"/>
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a97347" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#1a1714" stop-opacity="0.6"/>
-    </linearGradient>
-  </defs>
-  <text x="600" y="290" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#ffffff">Mueblería</text>
-  <text x="600" y="370" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#f0e6d8">Muebles que aguantan la humedad de Paraguay</text>
-  <text x="600" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#e0ccb0">muebleria.com.py</text>
+  <rect width="1200" height="630" fill="#FAFAF8"/>
+  <rect x="80" y="80" width="1040" height="470" fill="none" stroke="#ECECEC" stroke-width="1"/>
+  <rect x="540" y="408" width="120" height="2" fill="#B08968"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" fill="#1A1A1A">Mueblería</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#555555">Muebles que aguantan la humedad de Paraguay</text>
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2" fill="#B08968">muebleria.com.py</text>
 </svg>
 `;
 writeFileSync(join(root, 'public', 'images', 'og-default.svg'), og);

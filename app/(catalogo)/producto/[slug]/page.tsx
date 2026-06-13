@@ -75,17 +75,17 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />
       <nav aria-label="Ruta" className="text-sm text-stone-500">
-        <Link href="/" className="hover:text-wood-700">Inicio</Link> /{' '}
-        <Link href={`/${product.category}`} className="hover:text-wood-700">
+        <Link href="/" className="hover:text-clay-600">Inicio</Link> /{' '}
+        <Link href={`/${product.category}`} className="hover:text-clay-600">
           {getCategoryName(product.category)}
         </Link>{' '}
         / {product.name}
       </nav>
 
-      <div className="mt-4 grid gap-8 lg:grid-cols-2">
+      <div className="mt-6 grid gap-10 lg:grid-cols-2">
         {/* Images */}
         <div className="space-y-3">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-wood-100">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
             <Image
               src={product.images[0]}
               alt={product.name}
@@ -96,7 +96,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             />
           </div>
           {product.images[1] && (
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-wood-100">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
               <Image
                 src={product.images[1]}
                 alt={`${product.name} — vista alternativa`}
@@ -113,26 +113,26 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           <div className="flex items-center gap-2">
             <MaterialBadgeTag badge={product.material.badge} />
             {product.stock === 'a_pedido' && (
-              <span className="rounded-md bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-800">
+              <span className="rounded-full border border-line px-2.5 py-1 text-xs font-medium text-muted">
                 Fabricación a pedido · {product.leadTimeDays ?? 15} días
               </span>
             )}
           </div>
-          <h1 className="mt-3 text-2xl font-extrabold leading-tight text-stone-900 sm:text-3xl">
+          <h1 className="mt-4 font-serif text-3xl font-normal leading-tight text-ink sm:text-4xl">
             {product.name}
           </h1>
 
-          <div className="mt-4 space-y-2">
-            <p className="text-3xl font-extrabold text-wood-800">{formatPYG(product.price)}</p>
+          <div className="mt-5 space-y-2">
+            <p className="text-3xl font-normal text-ink">{formatPYG(product.price)}</p>
             <CuotasBadge price={product.price} />
           </div>
 
           {/* Delivery + assembly disclosed upfront */}
-          <div className="mt-5 space-y-2 rounded-xl border border-wood-200 bg-white p-4 text-sm">
-            <p className="flex items-center gap-2 font-semibold text-stone-800">
-              <TruckIcon className="h-5 w-5 text-wood-600" /> Envío y armado, sin sorpresas
+          <div className="mt-6 space-y-2 rounded-lg border border-line bg-white p-4 text-sm">
+            <p className="flex items-center gap-2 font-medium text-ink">
+              <TruckIcon className="h-5 w-5 text-clay-500" /> Envío y armado, sin sorpresas
             </p>
-            <ul className="space-y-1 text-stone-700">
+            <ul className="space-y-1 text-muted">
               <li>
                 Envío Asunción: <strong>{formatPYG(product.delivery.asuncion)}</strong>
               </li>
@@ -159,9 +159,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </div>
 
           {/* Details */}
-          <div className="mt-7 space-y-4 text-sm leading-relaxed text-stone-700">
+          <div className="mt-8 space-y-4 text-sm leading-relaxed text-muted">
             <p>{product.description}</p>
-            <div className="grid grid-cols-2 gap-3 rounded-xl bg-wood-100/60 p-4">
+            <div className="grid grid-cols-2 gap-3 rounded-lg border border-line bg-neutral-50 p-4">
               <div>
                 <p className="text-xs font-semibold uppercase text-stone-500">Estructura</p>
                 <p>{product.material.structure}</p>
@@ -191,11 +191,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       </div>
 
       {related.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-wood-900">
+        <section className="mt-16">
+          <h2 className="font-serif text-2xl font-normal text-ink">
             Más en {getCategoryName(product.category)}
           </h2>
-          <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}

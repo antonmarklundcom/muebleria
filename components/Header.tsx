@@ -4,29 +4,29 @@ import CartLink from './CartLink';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-wood-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-        <Link href="/" className="flex items-baseline gap-1 text-xl font-extrabold tracking-tight text-wood-800">
+    <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4">
+        <Link href="/" className="flex items-baseline gap-1 text-xl font-semibold tracking-tight text-ink">
           Mueblería
-          <span className="text-sm font-semibold text-wood-500">.com.py</span>
+          <span className="text-sm font-normal text-clay-600">.com.py</span>
         </Link>
         <div className="flex items-center gap-1">
           <Link
             href="/nosotros"
-            className="hidden rounded-lg px-3 py-2 text-sm font-medium text-stone-700 transition hover:bg-wood-100 sm:block"
+            className="hidden rounded-lg px-3 py-2 text-sm font-medium text-muted transition hover:text-ink sm:block"
           >
             Nosotros
           </Link>
           <CartLink />
         </div>
       </div>
-      <nav aria-label="Categorías" className="border-t border-wood-100 bg-white">
+      <nav aria-label="Categorías" className="border-t border-line bg-paper/90">
         <div className="mx-auto flex max-w-6xl gap-1 overflow-x-auto px-4 py-2 [-webkit-overflow-scrolling:touch]">
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.slug}
               href={`/${cat.slug}`}
-              className="whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:bg-wood-100 hover:text-wood-800"
+              className="whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium text-muted transition hover:text-clay-600"
             >
               {cat.name}
             </Link>
