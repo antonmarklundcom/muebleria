@@ -23,10 +23,10 @@ export default function GraciasPage({ searchParams }: { searchParams: SearchPara
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-14 text-center">
-      <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
-        <CheckIcon className="h-8 w-8 text-emerald-600" />
+      <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-clay-50">
+        <CheckIcon className="h-8 w-8 text-clay-600" />
       </div>
-      <h1 className="mt-5 text-2xl font-extrabold text-wood-900 sm:text-3xl">
+      <h1 className="mt-5 font-serif text-3xl font-normal text-ink sm:text-4xl">
         ¡Recibimos tu pedido!
       </h1>
       {pedido && (
@@ -37,7 +37,7 @@ export default function GraciasPage({ searchParams }: { searchParams: SearchPara
       )}
 
       {metodo === 'pagopar' && (
-        <div className="mt-6 space-y-3 rounded-2xl border border-wood-200 bg-white p-5 text-left text-sm leading-relaxed text-stone-700">
+        <div className="mt-6 space-y-3 rounded-lg border border-line bg-white p-5 text-left text-sm leading-relaxed text-muted">
           {searchParams.sandbox === '1' ? (
             <p>
               <strong>Modo sandbox:</strong> el pago online está en modo de prueba — no se procesó
@@ -54,7 +54,7 @@ export default function GraciasPage({ searchParams }: { searchParams: SearchPara
       )}
 
       {metodo === 'transferencia' && (
-        <div className="mt-6 space-y-4 rounded-2xl border border-wood-200 bg-white p-5 text-left text-sm leading-relaxed text-stone-700">
+        <div className="mt-6 space-y-4 rounded-lg border border-line bg-white p-5 text-left text-sm leading-relaxed text-muted">
           {comprobantePendiente ? (
             <>
               <p>
@@ -81,7 +81,7 @@ export default function GraciasPage({ searchParams }: { searchParams: SearchPara
       )}
 
       {metodo === 'whatsapp' && (
-        <div className="mt-6 rounded-2xl border border-wood-200 bg-white p-5 text-left text-sm leading-relaxed text-stone-700">
+        <div className="mt-6 rounded-lg border border-line bg-white p-5 text-left text-sm leading-relaxed text-muted">
           <p>
             Tu pedido nos llegó por WhatsApp. Te respondemos en horario comercial para confirmar
             stock, entrega y forma de pago.

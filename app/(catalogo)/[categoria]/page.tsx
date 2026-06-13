@@ -34,12 +34,12 @@ export default function CategoryPage({ params }: { params: { categoria: string }
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <nav aria-label="Ruta" className="text-sm text-stone-500">
-        <a href="/" className="hover:text-wood-700">Inicio</a> / {category.name}
+        <a href="/" className="hover:text-clay-600">Inicio</a> / {category.name}
       </nav>
-      <h1 className="mt-2 text-3xl font-extrabold text-wood-900">{category.name}</h1>
-      <p className="mt-4 max-w-3xl leading-relaxed text-stone-700">{category.intro}</p>
+      <h1 className="mt-3 font-serif text-4xl font-normal text-ink">{category.name}</h1>
+      <p className="mt-4 max-w-3xl leading-relaxed text-muted">{category.intro}</p>
 
-      <div className="mt-8">
+      <div className="mt-10">
         <CategoryProductList products={products} filterTags={category.filterTags} />
       </div>
     </div>

@@ -27,8 +27,8 @@ export default function CategoryProductList({
             onClick={() => setActiveTag(null)}
             className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
               activeTag === null
-                ? 'bg-wood-700 text-white'
-                : 'bg-white text-stone-700 ring-1 ring-stone-300 hover:bg-wood-100'
+                ? 'bg-clay-600 text-white'
+                : 'bg-white text-muted ring-1 ring-line hover:text-clay-600'
             }`}
           >
             Todos
@@ -40,8 +40,8 @@ export default function CategoryProductList({
               onClick={() => setActiveTag(activeTag === tag ? null : tag)}
               className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
                 activeTag === tag
-                  ? 'bg-wood-700 text-white'
-                  : 'bg-white text-stone-700 ring-1 ring-stone-300 hover:bg-wood-100'
+                  ? 'bg-clay-600 text-white'
+                  : 'bg-white text-muted ring-1 ring-line hover:text-clay-600'
               }`}
             >
               {tag}
@@ -50,11 +50,11 @@ export default function CategoryProductList({
         </div>
       )}
       {visible.length === 0 ? (
-        <p className="rounded-xl bg-white p-6 text-center text-stone-600">
+        <p className="rounded-lg border border-line bg-white p-6 text-center text-muted">
           No hay productos con ese filtro por ahora. Consultanos por WhatsApp: fabricamos a medida.
         </p>
       ) : (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
