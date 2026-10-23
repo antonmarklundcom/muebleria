@@ -16,7 +16,8 @@ type SearchParams = {
 };
 
 /** Confirmation page; content varies by payment method via query params. */
-export default function GraciasPage({ searchParams }: { searchParams: SearchParams }) {
+export default async function GraciasPage(props: { searchParams: Promise<SearchParams> }) {
+  const searchParams = await props.searchParams;
   const metodo = searchParams.metodo ?? 'whatsapp';
   const pedido = searchParams.pedido;
   const comprobantePendiente = searchParams.comprobante === 'pendiente';

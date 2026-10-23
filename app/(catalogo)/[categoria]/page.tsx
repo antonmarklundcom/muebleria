@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CATEGORIES, getCategory } from '@/lib/categories';
 import { getProductsByCategory } from '@/lib/catalog';
@@ -10,8 +11,9 @@ export function generateStaticParams() {
   return CATEGORIES.map((cat) => ({ categoria: cat.slug }));
 }
 
-export function generateMetadata({ params }: { params: { categoria: string } }): Metadata {
-  const category = getCategory(params.categoria);
+export async function generateMetadata({ params }: { params: Promise<{ categoria: string }> }): Promise<Metadata> {
+  const { categoria } = await params;
+  const category = getCategory(categoria);
   if (!category) return {};
   return {
     title: category.metaTitle,
@@ -25,8 +27,9 @@ export function generateMetadata({ params }: { params: { categoria: string } }):
   };
 }
 
-export default function CategoryPage({ params }: { params: { categoria: string } }) {
-  const category = getCategory(params.categoria);
+export default async function CategoryPage({ params }: { params: Promise<{ categoria: string }> }) {
+  const { categoria } = await params;
+  const category = getCategory(categoria);
   if (!category) notFound();
 
   const products = getProductsByCategory(category.slug);
@@ -34,7 +37,7 @@ export default function CategoryPage({ params }: { params: { categoria: string }
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <nav aria-label="Ruta" className="text-sm text-stone-500">
-        <a href="/" className="hover:text-clay-600">Inicio</a> / {category.name}
+        <Link href="/" className="hover:text-clay-600">Inicio</Link> / {category.name}
       </nav>
       <h1 className="mt-3 font-serif text-4xl font-normal text-ink">{category.name}</h1>
       <p className="mt-4 max-w-3xl leading-relaxed text-muted">{category.intro}</p>
