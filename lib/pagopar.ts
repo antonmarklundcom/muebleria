@@ -1,4 +1,4 @@
-import { createHash } from 'crypto';
+import { createHash, timingSafeEqual } from 'crypto';
 import type { Order } from './types';
 
 /**
@@ -198,16 +198,21 @@ export type PagoparWebhookPayload = {
   resultado: PagoparWebhookResult[];
 };
 
-/** Validates the webhook token: sha1(privateToken + hash_pedido). */
+/**
+ * Validates the webhook token: sha1(privateToken + hash_pedido).
+ * Fails closed: without PAGOPAR_PRIVATE_TOKEN NO webhook is accepted, sandbox
+ * or not (a missing token used to let anyone mark orders as paid).
+ */
 export function isValidWebhookResult(result: PagoparWebhookResult): boolean {
   const privateToken = process.env.PAGOPAR_PRIVATE_TOKEN;
   if (!privateToken) {
-    // Sandbox without credentials: accept but log loudly. Never in production.
-    if (isSandbox()) {
-      console.warn('[pagopar] SANDBOX webhook accepted WITHOUT token validation');
-      return true;
-    }
+    console.error(
+      '[pagopar] PAGOPAR_PRIVATE_TOKEN is not set — rejecting webhook (set the token, also in sandbox, to receive webhooks)',
+    );
     return false;
   }
-  return result.token === signWebhookToken(privateToken, result.hash_pedido);
+  if (typeof result.token !== 'string' || typeof result.hash_pedido !== 'string') return false;
+  const expected = Buffer.from(signWebhookToken(privateToken, result.hash_pedido));
+  const received = Buffer.from(result.token);
+  return received.length === expected.length && timingSafeEqual(received, expected);
 }
